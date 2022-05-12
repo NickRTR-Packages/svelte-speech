@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import SvelteSpeech from "$lib/SvelteSpeech.svelte";
+</script>
+
+<h1>svelte-speach</h1>
+<SvelteSpeech text={"Hello World!"}/>
