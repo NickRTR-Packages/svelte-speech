@@ -1,6 +1,6 @@
 {
   "name": "svelte-speech",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "NickRTR",
   "scripts": {
     "dev": "svelte-kit dev",
