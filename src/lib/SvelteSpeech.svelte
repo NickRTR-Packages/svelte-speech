@@ -6,11 +6,14 @@
     export let pitch = 1;
     export let rate = 1;
 
-    let voices = [];
     /**
-    * @type {SpeechSynthesisVoice | null}
+    * @type {SpeechSynthesisVoice[]} 
     */
-    let voice;
+    export let voices = [];
+    /**
+    * @type {SpeechSynthesisVoice}
+    */
+    export let voice;
 
     onMount(() => {
         speechSynthesis.onvoiceschanged = () => {
@@ -19,7 +22,7 @@
         }
     })
 
-    function play() {
+    export const play = () => {
         speechSynthesis.cancel(); // cancel playing text
 
         const speaker = new SpeechSynthesisUtterance(text);
@@ -31,5 +34,3 @@
         speechSynthesis.speak(speaker);
     }
 </script>
-
-<button on:click={play}>Play</button>
