@@ -38,7 +38,7 @@
                 <option value={i}>{voice.name}</option>
             {/each}
         </select>
-        <button on:click={play}>Play</button>
+        <button type="button" on:click={play}>Play</button>
     </form>
 </body>
 
