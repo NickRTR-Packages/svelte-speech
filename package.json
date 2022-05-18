@@ -1,6 +1,6 @@
 {
   "name": "svelte-speech",
-  "version": "0.0.5",
+  "version": "0.0.9",
   "author": "NickRTR",
   "scripts": {
     "dev": "svelte-kit dev",
@@ -12,7 +12,8 @@
     "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch"
   },
   "exports": {
-    ".": "./SvelteSpeech.svelte"
+    ".": "./src/lib/SvelteSpeech.svelte",
+    "./package.json": "./package.json"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
